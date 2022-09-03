@@ -1,50 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap");
+
 * {
   box-sizing: border-box;
 }
-label,
-p {
-  display: block;
+
+body {
   font-family: "IBM Plex Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.01em;
-  color: #6f7482;
-}
-p {
-  margin-bottom: 8px;
-  margin-top: 20px;
-}
-p:first-child {
-  margin-top: 0;
 }
 
-h1 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-style: normal;
-  font-weight: 600;
+/*Heading*/
+.heading__title {
   font-size: 32px;
   line-height: 42px;
   letter-spacing: 0.1px;
-  color: #3b4256;
+  color: #4f47c8;
   text-align: center;
 }
-#description {
+
+.heading__description {
   text-align: center;
+  color: #6f7482;
+  padding-bottom: 15px;
 }
-#survey-form {
+
+/*Section Form*/
+.form {
+
   width: 492px;
-  border: 0.5px solid gray;
   margin: auto;
-  border: 1px dashed #0048d9;
+  border: 1px dashed #4f47c8;
   border-radius: 5px;
   padding: 16px;
 }
-#name,
-#email,
-#number,
+
+.form__textInput,.form__dropdownInput,.form__radioInput,.form__checkboxInput,.form__textareaInput{
+  padding-bottom:20px;
+}
+
+.form label {
+  display: block;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4f47c8;
+}
+
+.form p {
+  color: #4f47c8;
+  margin:0;
+}
+
+.form p:first-child {
+  margin-top: 0;
+}
+
+/*Form dropdown,
+Form name input,
+Form email input,
+Form age input
+*/
+.form__textInput input,
 select {
   padding: 12px;
   height: 48px;
@@ -53,28 +68,57 @@ select {
   border: none;
   display: block;
   width: 100%;
+  color: #b8bcca;
+  font-size: small;
+}
+
+input::placeholder{
+  color:#b8bcca;
+  font-size: small;
+}
+
+
+/*
+Form radio buttons,
+Form Checkbox
+*/
+.form__radioInput label,
+.form__checkboxInput label {
   color: #6f7482;
 }
-textarea {
+
+/*Form Comments*/
+.form textarea {
   padding: 12px;
   width: 100%;
   background: #f8fafc;
   border-radius: 4px;
   border: none;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-size: small;
   line-height: 143%;
   color: #b8bcca;
 }
-#submit {
+
+/*Form Button*/
+.form #submit {
   padding: 10px 16px;
-  background: #0048d9;
+  background: #4f47c8;
   border-radius: 6px;
   color: white;
   width: 100%;
   border: none;
   margin-top: 10px;
   font-size: large;
+}
+
+/*About me links*/
+footer {
+  text-align: center;
+}
+footer a{
+  color:#4a4d56;
+  
+}
+footer a:hover{
+color:#4f47c8;
 }
